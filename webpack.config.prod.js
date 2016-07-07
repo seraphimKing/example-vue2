@@ -9,7 +9,7 @@ module.exports = {
        vendor: ['vue','vue-router','vue-resource']
     },
 	output: {
-		path: './dest',
+		path: './dist',
 		filename: 'js/app.[hash].js',
 		publicPath: '../' // 可以在这里配置对应的输出CDN路径如 http://localhost:8080/
 	},

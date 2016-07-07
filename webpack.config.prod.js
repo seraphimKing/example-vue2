@@ -1,6 +1,5 @@
 var ExtractTextPlugin = require("extract-text-webpack-plugin")
 var HtmlWebpackPlugin = require('html-webpack-plugin')
-
 var webpack = require('webpack')
 module.exports = {
 	entry:
@@ -18,7 +17,7 @@ module.exports = {
 		  	{ test: /\.(png|jpg|jpeg|gif)$/, loader: 'url?limit=10000&name=images/[name].[ext]' },
 		  	{ test: /\.(woff|svg|ttf|eot)$/, loader: 'url?limit=10000&name=iconfont/[name].[ext]' },
 			{ test: /\.html$/,loader: 'html-loader' },
-			{ test: /\.css$/,loader: ExtractTextPlugin.extract("style-loader!css-loader!postcss-loader") }
+			{ test: /\.css$/,loader: ExtractTextPlugin.extract("style-loader!css-loader") }
 		]
 	},
 	plugins: [
@@ -35,8 +34,5 @@ module.exports = {
 	      template: 'index.html',
 	      inject: true
 	    })
-  ],
-  postcss: function () {
-  	return [require('autoprefixer'), require('postcss-scss')] // autoprefixer 自动加入前缀 scss写法
-  }
+  ]
 }			

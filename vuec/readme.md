@@ -25,3 +25,5 @@
   * service - 业务组件 - 含功能(ajax)的模块组件 - S / B / C
   * 组件命名只需要带上 组件分类的前缀即可 如 e_componentname / m_componentname / s_componentname
 * 一切为了高可用前端  
+* 用组件拼装webapp的预想
+  * 可抽离的模块 / 未开发的组件 开始 提取组件 -> 用readme.md 进行组件的更新记录

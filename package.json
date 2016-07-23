@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
-    "build": "webpack --config webpack.config.prod.js -p"
+    "dev": "cd webpack && webpack-dev-server --config dev.js --inline --hot",
+    "build": "cd webpack && webpack --config prod.js -p"
   },
   "author": "dingyiming",
   "license": "ISC",

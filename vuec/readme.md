@@ -17,8 +17,8 @@
 ## 前端约定
 
 * css以工程师名为前缀
-* ![借鉴京东O2前端规范](https://guide.aotu.io/)
-* ![借鉴京东O2前端工程方案](https://aotu.io/notes/2016/07/19/A-little-exploration-of-front-end-engineering/?o2src=juejin&o2layout=compat)
+* [借鉴京东O2前端规范](https://guide.aotu.io/)
+* [借鉴京东O2前端工程方案](https://aotu.io/notes/2016/07/19/A-little-exploration-of-front-end-engineering/?o2src=juejin&o2layout=compat)
 * 组件划分 (很关键 - 需要明确) 复用度等级划分 S > A > B - 命名简写 E - M - S 带C表示可配置
   * element - 元素UI组件 - E / S / C  
   * module - 模块UI组件 - 不含功能 - M / S / C

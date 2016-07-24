@@ -27,6 +27,7 @@
   "dependencies": {
     "vue": "^1.0.26",
     "vue-resource": "^0.9.3",
-    "vue-router": "^0.7.13"
+    "vue-router": "^0.7.13",
+    "vuec": "0.0.1"
   }
 }

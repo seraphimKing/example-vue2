@@ -4,13 +4,13 @@ var webpack = require('webpack')
 module.exports = {
 	entry:
 	 {
-       app: '../src/main.js',
+       app: './src/main.js',
        vendor: ['vue','vue-router','vue-resource']
     },
 	output: {
-		path: '../dist',
+		path: './dist',
 		filename: 'js/app.[hash].js',
-		publicPath: '../' // 可以在这里配置对应的输出CDN路径如 http://localhost:8080/
+		publicPath: '' // 可以在这里配置对应的输出CDN路径如 http://localhost:8080/
 	},
 	module: {
 		loaders: [
@@ -31,7 +31,7 @@ module.exports = {
 	    // https://github.com/ampedandwired/html-webpack-plugin
 	    new HtmlWebpackPlugin({
 	      filename: 'html/index.html',
-	      template: 'index.html',
+	      template: './src/index.html',
 	      inject: true
 	    })
   ]

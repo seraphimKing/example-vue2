@@ -4,11 +4,11 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack = require('webpack');
 module.exports = {
   entry: {
-    app: '../src/main.js',
+    app: './src/main.js',
     vendor: ['vue', 'vue-router', 'vue-resource']
   },
   output: {
-    path: '../dist',
+    path: './dist',
     filename: 'app.js',
     publicPath: ''
   },
@@ -39,7 +39,7 @@ module.exports = {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: '../index.html',
+      template: './src/index.html',
       inject: true
     })
   ]

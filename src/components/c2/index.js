@@ -1,8 +1,12 @@
+var count = require("../../vuex/states/count.js")
 module.exports = {
     template: require("./index.html"),
     vuex: {
         getters: {
-            count: require("../../vuex/getters.js")
+            count: count.getter
+        },
+        actions: {
+            plus: count.action.plus
         }
     }
 }

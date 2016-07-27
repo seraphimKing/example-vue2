@@ -11,4 +11,7 @@ routerConfig(router)
 
 // var allc = require("./allc.js")
 // Vue.mixin(allc)
+// var operations = require("./vuex/operations.js")
+// Vue.mixin(operations)
+
 router.start(app,'app')

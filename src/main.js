@@ -9,5 +9,6 @@ var router = new VueRouter()
 
 routerConfig(router)
 
-// Vue.mixin(require("./allc.js"))
+// var allc = require("./allc.js")
+// Vue.mixin(allc)
 router.start(app,'app')

@@ -1,5 +1,5 @@
 module.exports = function(router) {
-	router.map({
+    router.map({
 		'/': {
 			// component: function (resolve) {
     		// 	require(['./pages/view1'], resolve) // 异步加载view1

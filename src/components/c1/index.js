@@ -1,7 +1,7 @@
 
 module.exports = {
     template: require("./index.html"),
-    mixins:[
-        require("../c2/action.js")
+    mixins: [
+        require("../../vuex/count/action.js")
     ]
 }

@@ -7,6 +7,6 @@ module.exports = {
         }
     },
     mixins: [
-        require("./action.js")
+        require("../../vuex/count/action.js")
     ]
 }

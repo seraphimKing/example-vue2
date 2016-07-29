@@ -1,12 +1,12 @@
-var count = require("../../vuex/states/count.js")
+var style = require("./index.css")
 module.exports = {
     template: require("./index.html"),
-    vuex: {
-        getters: {
-            count: count.getter
-        },
-        actions: {
-            plus: count.action.plus
+    data: function(){
+        return {
+            style: style
         }
-    }
+    },
+    mixins: [
+        require("./action.js")
+    ]
 }

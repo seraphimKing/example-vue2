@@ -2,35 +2,8 @@
 
 > vue2 从头再来
 
-## vue2文档
 
-- 官方RC文档
-
-> http://rc.vuejs.org
-
-- 中文文档
-
->  http://vuefe.cn (逐步更新...)
-
-##  WebAPP (H5) 组件库实践 2016.09.14
-
-- [vue-pure](https://github.com/dingyiming/vue-pure)
-
-- [example](http://vue-pure.dingyiming.cn/#/)
-
-![](https://cloud.githubusercontent.com/assets/12537013/18506111/f936fab2-7a9c-11e6-841b-09c5d3aaa1b6.png)
-
-## vue2 启航注意点
- 
-> https://github.com/dingyiming/vuejs-start/issues/10
-
-## webpack2
-
-- 入坑注意 https://github.com/dingyiming/vue2-start/issues/9
-
-- 最新webpack2 && babel 实现tree shaking demo  https://github.com/dingyiming/vue2-start/issues/12
-
-### 涉及技术栈
+## 技术栈
 
 - vue2
 - webpack2 && tree shaking
@@ -42,10 +15,40 @@
 - stream render
 - express
 
-## vue2起手式
- 
-> 逐步搭建vue2全家桶 // 先逐步进展，较完善后进行详细解说
+## vue2文档
 
+- 官方RC文档
+
+> http://rc.vuejs.org
+
+- 中文文档
+
+>  http://vuefe.cn (逐步更新...)
+
+## vue2 启航注意点
+ 
+> https://github.com/dingyiming/vuejs-start/issues/10
+
+## webpack2
+
+- 入坑注意 https://github.com/dingyiming/vue2-start/issues/9
+
+- 最新webpack2 && babel 实现tree shaking demo  https://github.com/dingyiming/vue2-start/issues/12
+
+## 单元测试 - 起步
+
+- https://github.com/dingyiming/vue2-start/issues/25
+- https://github.com/dingyiming/vue2-start/tree/unit-test
+
+
+## 规范
+
+- https://github.com/dingyiming/vue-pure/blob/dev/README.md
+
+## vue2起手式
+
+> 逐步搭建vue2全家桶 // 先逐步进展，较完善后进行详细解说
+ 
 ### vue2 && vue-router@next
 - [x] npm i vue-cli -g
 - [x] vue init webpack-simple-2.0 vuejs-start
@@ -65,11 +68,14 @@
 - [ ] 深化，直接写样式，点击生成，完成样式（待考虑）
 
 
-## 规范
+##  WebAPP (H5) 组件库实践 2016.09.14
 
-- ESLint Airbnb ES6 base
+- [vue-pure](https://github.com/dingyiming/vue-pure)
 
-- 尽量写上注释
+- [example](http://vue-pure.dingyiming.cn/#/)
+
+![](https://cloud.githubusercontent.com/assets/12537013/18506111/f936fab2-7a9c-11e6-841b-09c5d3aaa1b6.png)
+
 
 ## Vue 生命周期
 

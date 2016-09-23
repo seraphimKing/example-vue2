@@ -8,11 +8,6 @@ ADD . /home/app
 
 WORKDIR /home/app
 
-RUN npm install
-
-RUN npm run build
-
 ENTRYPOINT pm2 start pm2.json;sleep 100000000
-
 
 EXPOSE 10000

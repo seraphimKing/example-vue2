@@ -8,7 +8,7 @@
 
 <style lang="sass">
 @import 'style/reset.scss';
-@import '~mobi.css/src/mobi';
+@import '~mobi.css/src/mobi.scss';
 @import 'style/init.scss';
 
 body{

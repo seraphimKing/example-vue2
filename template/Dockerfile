@@ -4,10 +4,18 @@ MAINTAINER dingyiming
 
 RUN npm i -g pm2
 
-ADD . /home/app
+RUN mkdir -p /home/app
 
 WORKDIR /home/app
 
-ENTRYPOINT pm2 start pm2.json;sleep 100000000
+COPY package.json /home/app
+
+RUN npm install
+
+ADD . /home/app
+
+RUN npm run build
+
+ENTRYPOINT npm run start;sleep 100000000
 
 EXPOSE 10000

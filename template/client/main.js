@@ -1,9 +1,10 @@
 import Vue from 'vue';
 import FastClick from 'fastclick';
-import App from './App.vue';
+import { sync } from 'vuex-router-sync';
+
+import App from './App';
 import store from './store';
 import router from './router';
-import { sync } from 'vuex-router-sync';
 
 sync(store, router);
 FastClick.attach(document.body);

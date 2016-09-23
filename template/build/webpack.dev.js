@@ -6,7 +6,7 @@ var autoprefixer = require('autoprefixer');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, '../src/entry-client.js'),
+    app: path.resolve(__dirname, '../client/entry-client.js'),
     vendor: [
       'vue',
       'vue-router',
@@ -19,37 +19,26 @@ module.exports = {
     filename: '[name].js',
     publicPath: '',
   },
-  resolveLoader: {
-    root: path.join(__dirname, 'node_modules'),
-  },
   resolve: {
-    root: path.resolve('src'),
     alias: {
       vue: 'vue/dist/vue.min.js',
-      src: path.resolve(__dirname, '../src'),
-      views: path.resolve(__dirname, '../src/views'),
-      components: path.resolve(__dirname, '../src/components'),
-      utils: path.resolve(__dirname, '../src/App/utils')
+      client: path.resolve(__dirname, '../client'),
+      views: path.resolve(__dirname, '../client/views'),
+      components: path.resolve(__dirname, '../client/components'),
+      utils: path.resolve(__dirname, '../client/App/utils'),
     },
-    extensions: ['', '.js', '.vue'],
+    extensions: ['.js', '.vue'],
   },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/,
-      }
-    ],
     loaders: [
       {
         test: /\.vue$/,
-        loader: 'vue'
+        loader: 'vue',
       },
       {
         test: /\.js$/,
         loader: 'babel',
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.(png|jpg|jpeg|gif)$/,
@@ -80,20 +69,26 @@ module.exports = {
       },
     ],
   },
-  vue: {
-    loaders: {
-      scss: 'style!css!sass',
-    },
-  },
-  postcss: [
-    autoprefixer({
-      browsers: ['last 3 versions'],
-    })
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        eslint: {
+          configFile: '.eslintrc',
+        },
+        vue: {
+          loaders: {
+            scss: 'style!css!sass',
+          },
+        },
+        postcss: [
+          autoprefixer({
+            browsers: ['last 3 versions'],
+          }),
+        ],
+      },
+    }),
   ],
-  eslint: {
-    configFile: '.eslintrc',
-  },
-}
+};
 
 if (process.env.NODE_ENV === 'dev') {
   // 配置开发服务器
@@ -109,17 +104,17 @@ if (process.env.NODE_ENV === 'dev') {
   module.exports.plugins = [
     // 抽离公共js
     new webpack.optimize.CommonsChunkPlugin({
-      name: "vendor",
+      name: 'vendor',
       filename: 'vendor_vue.js',
     }),
     new ExtractTextPlugin({
-      filename: "app.css",
-      allChunks: true
+      filename: 'app.css',
+      allChunks: true,
     }),
     // 自动注入 html
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: path.resolve(__dirname, '../src/index.html'),
+      template: path.resolve(__dirname, '../client/index.html'),
     }),
   ];
 }

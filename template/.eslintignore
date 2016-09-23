@@ -1,7 +1,7 @@
 build/*.js
 config/*.js
 .eslintrc.js
-webpack/
-src/router/index.js
+webpack/*.js
 src/index.html
 src/api/Pay.js
+src/entry-client.js

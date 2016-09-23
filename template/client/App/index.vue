@@ -6,11 +6,12 @@
 </div>
 </template>
 
-<script>
-</script>
-
-<style lang="scss">
-@import 'reset.scss';
+<style lang="sass">
+@import 'style/reset.scss';
 @import '~mobi.css/src/mobi';
-@import 'init.scss';
+@import 'style/init.scss';
+
+body{
+  background: #fbf9fe;
+}
 </style>

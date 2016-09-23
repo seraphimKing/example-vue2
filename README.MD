@@ -5,5 +5,5 @@
 ```
 npm i -g vue-cli
 
-vue init dingyiming/template myprojectname
+vue init dingyiming/template#vue2-webapp myprojectname
 ```

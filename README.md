@@ -56,7 +56,7 @@
 ```
 npm i -g vue-cli
 
-vue init dingyiming/template#vue2-webapp
+vue init dingyiming/template#vue2-webapp myprojectname
 ```
  
 ### vue2 && vue-router@next

@@ -7,10 +7,9 @@
 
 - vue2
 - webpack2 && tree shaking
-- axios
+- Fetch
 - vue-router@next
 - vuex@next
-- normalize.css
 - ssr
 - stream render
 - express
@@ -48,6 +47,17 @@
 ## vue2起手式
 
 > 逐步搭建vue2全家桶 // 先逐步进展，较完善后进行详细解说
+
+## vue2 webapp模板生成
+
+> 基于 vue-cli自定义模板 ，
+> https://github.com/dingyiming/template
+
+```
+npm i -g vue-cli
+
+vue init dingyiming/template#vue2-webapp
+```
  
 ### vue2 && vue-router@next
 - [x] npm i vue-cli -g

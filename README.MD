@@ -1,4 +1,4 @@
-# vue2-template-webapp
+# template-vue2-webapp
 
 > https://github.com/dingyiming/template
 

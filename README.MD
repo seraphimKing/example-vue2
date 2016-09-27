@@ -1,4 +1,26 @@
-# vue2-template-webapp
+# vue2 example douban app
+
+> vue2 webapp 示例 豆瓣 APP
+
+## 新建项目
+
+```
+npm i -g vue-cli
+
+vue init dingyiming/template#vue2-webapp douban
+
+cd douban
+
+npm install
+```
+
+## 运行
+
+```
+npm run dev // 开发
+npm run build // 打包
+npm run start // 用pm2线上部署
+```
 
 
 ## 技术栈
